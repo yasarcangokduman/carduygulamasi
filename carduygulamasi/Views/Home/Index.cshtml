@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">SALAŞ KİTAP</h1>
+
+    <div class="card" style="width: 18rem;">
+  <img src="~/img/satranc.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title">@ViewBag.Kitap.KitapAdi</h5>
+            <p class="card-text">Bir yolcu gemisinde yolları kesişen iki farklı zihnin düellosunu anlatır Satranç. Kendini beğenmiş, dünya satranç şampiyonu Czentovic'i alt etmeyi aklına koymuş bir grup, mucize kişi Dr.B'nin verdiği taktiklerle yenilmekten son anda kurtulmuştur.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">@ViewBag.Kitap.Kitapyazar</li>
+    <li class="list-group-item">@ViewBag.Kitap.SayfaSayisi</li>
+    <li class="list-group-item">@ViewBag.Kitap.KitapId</li>
+  </ul>
+  <div class="card-body">
+            <a href="https://www.dr.com.tr/Kitap/Satranc-Dunya-Klasikleri/Stefan-Zweig/Edebiyat/Roman/Dunya-Roman/urunno=0001910829001" class="card-link">D&R</a>
+            <a href="https://www.canyayinlari.com/satranc-9789750731419" class="card-link">CAN</a>
+  </div>
+</div>
+</div>
